@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+ <html lang="ru">
+   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Глуховский - задание 3</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+   </head>
+<body>
+     <header>
+    <div class="container-fluid page" style="background-color: #4f466e">
+        <div class="container">
+            <div class="row">
+              <div class="col-5 offset-5 col-md-4 offset-md-1 order-2">
+                <div class="h-100 py-3">
+                    <div id="line">
+                        <a>Главная</a>
+                    </div>
+                </div>
+              </div>
+              <div class="col-1 col-md-4 order-1">
+                <div class="h-100 py-3">
+                    <div id="logo">
+                         <img src="https://pixelbox.ru/wp-content/uploads/2021/04/cats-ava-steam-28.jpg" 
+                             Width="100" Height="100" alt="name"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+    <nav>
+        <div class="container" style="background-color: #4f466e">
+            <div class="row m-3">
+              <div class="col-12 col-md-12">
+     <ul class="menu nav flex-column nav flex-md-row nav justify-content-md-center">
+        <li class="mr-4"><a href="#Гиперссылки" title="Нумированный список гиперссылок">Гиперссылки</a></li>
+        <li class="mr-4"><a href ="#Таблица" title="Таблица с контентом">Таблица</a></li>
+        <li class="mr-4"><a href ="#Форма" title="Перейти к заполнению формы">Форма</a></li>
+      </ul>
+              </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="background-color: #4f466e">
+        <div class="row">
+          <div class="col-md-6 order-2">
+	    <h4 id="Гиперссылки">Гиперссылки</h4>
+        <ol> 
+            <li><a href="http://www.example.com">абсолютная гиперссылка на главную страницу сайта example.com</a></li>
+            <li><a href="https://www.example.com">абсолютную на главную сайта example.com в протоколе https</a></li>
+            <li><a href="ftp://ftp.superwarehouse.com/games;type=d">ссылку на файл на сервере FTP без авторизации</a></li>
+            <li><a href="ftp://test:1234@ftp.someserver.com/program.exe">ссылку на файл на сервере FTP c авторизацией</a></li>
+            <li><a href="https://www.kubsu.ru/#section-content">ссылку на фрагмент страницы некоторого сайта</a></li>
+            <li><a href="#first">ссылку на фрагмент текущей страницы</a></li>
+            <li><a href="http://example.com?type=Socks&color=Red">ссылку с двумя параметрами в URL</a></li>
+            <li>
+            <ul>
+                      <li><a href="#first">Начало страницы</a></li>
+                      <li><a href="#">Главная</a></li>
+              </ul>
+            </li>
+            <li><a>https://example.com/</a></li>
+	          <li><a href="">Ссылка с пустым href</a></li>
+	          <li><a href="https://www.example.com" rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
+	          <li><a href="https://www.example.com" rel="noindex">ссылка запрещенную для индексации поисковиками</a></li>
+            <li>контекстную в тексте <a href="https://example.com">абзаца</a></li>
+            <li><a href="http://example.com"><img src="https://avatars.mds.yandex.net/i?id=0c710823144eff4868bbcd901dd8db06-5213641-images-thumbs&ref=rim&n=33&w=150&h=150" Height= "50" Width="50" alt="flower"></a></li>
+            <li>
+                <map name="map1">
+                  <area shape="circle" coords= "70,70,65"  href="http://example.com" alt="circle">
+                  <area shape="rect" coords = "164,10,290,140" href="http://example.com/" alt="square">
+                </map>
+                <img usemap="#map1" src="https://avatars.mds.yandex.net/i?id=943fa2d3fd11275e5fbb8a180c3405f9-4012162-images-thumbs&ref=rim&n=33&w=267&h=150" Width="301" Height="174" alt="shapes">
+            </li>
+            <li><a href="example.html">относительную на страницу в текущем каталоге</a></li>
+	      <li><a href="about/contacts.html">относительную на страницу в каталоге aboutt</a></li>
+	      <li><a href="./some_file.html">относительную на страницу в каталоге уровнем выше текущего</a></li>
+	      <li><a href="././random.html">относительную на страницу в каталоге двумя уровнями выше</a></li>
+	      <li><a href="/">сокращенную на главную</a></li>
+	      <li><a href="/example.html"> сокращенную ссылку на внутреннюю</a></li>
+          </ol>
+          </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container__row d-flex flex-column">
+          <div class="row mt-3 order-3 order-sm-2" style="background-color: #4f466e">
+            <div class="col-12 col-md-6">
+          <div class="table">
+		<h4 id="Таблица">Таблица</h4>
+	  <table class="table table-bordered border-primary">
+		  <tr class="even">
+			  <th>Продукт</th>
+			  <th>Цена</th>
+			  <th>Откуда</th>
+		  </tr>
+		  <tr>
+			  <td rowspan="2">Объединённая по вертикали</td>
+			  <td>2</td>
+			  <td>3</td>
+		  </tr>
+		  <tr class="even">
+			  <td>4</td>
+			  <td>5</td>
+		  </tr>
+          <tr class="even">
+            <td>6</td>
+            <td colspan="2">Объединённая ячейчка по горизонтали</td>
+        </tr>
+		  <tr>
+			  <td>8</th>
+			  <td>9</td>
+              <td>10</td>
+		  </tr>
+		   </table>
+	   </div>
+            </div>
+          </div>
+          <div class="row mt-3 order-2 order-sm-3" style="background-color: #4f466e">
+            <div class="col-12 col-md-6">
+		<h4 id="Форма">Форма HTML</h4>
+ <label>
+ Имя:
+  <br />
+      <input name="field-name-1" value="Введите имя" /> 
+  </label><br />
+ <label>
+ Почта:
+  <br />
+      <input name="field-email" value="Ваша электронная почта" type="email" />
+  </label>
+ <br />
+  <label>
+ Дата рождения:
+ <br />
+      <input name="field-date" value="2019-08-13" type="date" />
+  </label>
+ <br />
+ Пол:
+ <br />
+  <label>
+     <input type="radio" checked="checked" name="radio-group-0" value="М" />М
+  </label>
+  <label>
+     <input type="radio" name="radio-group-0" value="Ж" />Ж
+ </label><br />
+Кол-во конечностей:
+ <br />
+<label>
+ <input type="radio" checked="checked" name="radio-group-1" value="Значение1" />1</label>
+ <label>
+ <input type="radio" name="radio-group-1" value="Значение2" />2</label> 
+ <label>
+ <input type="radio" name="radio-group-1" value="Значение3" />3</label> 
+ <label>
+ <input type="radio" name="radio-group-1" value="Значение4" />4</label>
+ <label>
+ <input type="radio" name="radio-group-1" value="Значение5" />5</label>
+ <br /> 
+   <label>
+Сверхспособности:
+ <br />
+  <select name="field-name-3[]" multiple="multiple">
+  <option value="Значение1">Бессмертие</option>
+  <option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+  <option value="Значение3" selected="selected">Левитация</option>
+  </select></label>
+ <br />
+  <label>
+Биография:
+  <br />
+  <textarea name="field-name-2">Напишите свою биографию</textarea></label>
+  <br />
+ <br />
+  <label>C контрактом ознакомлен(а)<input type="checkbox" name="check-1" /></label>
+ <br />
+ Отправить форму:
+  <input type="submit" value="Отправить" />
+  </form>
+</div>
+</div>
+        </div>
+    </div>
+    <div class="container-fluid page mt-3" style="background-color: #4f466e">
+		<footer class="footer" id="foot">
+<h4>(с) Глуховский Семён, 2022</h4>
+</footer>
+    </div>
+  </body>
+</html>
